@@ -32,7 +32,107 @@
         <a class="navbar-brand" href="#order" id="orders">ORDER</a>
 
     </nav>
-        
+
+    <header class="page-header header container-fluid">
+        <div class="overlay">
+          <div class="intro">
+            <img src="">
+            <h1>WANNA ENJOY BEST PIZZA IN TOWN?</h1>
+            
+            <p>STOP BY AND TASTE FINGER LICKING PIZZA PREPARED WITH LOVE</p>
+            
+    
+          </div>
+        </div>
+      </header>
+      
+
+  <div id="order">
+  
+    <div class="jumbotron jumbotron-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <h1 class="card-title"><em>ORDER PIZZA</h1>
+        </div>
+      </div>
+      </di>
+      <div class="container">
+        <div class="card">
+          <div class="row container">
+            <div class="col-md-6">
+              <form class="form-group" id="pizzaOrder">
+                <div id="pizzaSize">
+                  <label for="">select Pizza Size</label>
+                  <select required class="form-control" id="size">
+                    <option></option>
+                    <option value="Small">Small pizza</option>
+                    <option value="Medium">Medium pizza</option>
+                    <option value="Large">Large pizza</option>
+                  </select>
+                </div><br>
+                <div id="pizzaCrusts">
+                  <label for="">Choose Pizza Crust</label>
+                  <select required class="form-control" id="crust">
+                    <option></option>
+                    <option value="crispy">crispy pizza</option>
+                    <option value="stuffed">stuffed pizza</option>
+                    <option value="gluten">glutten pizza</option>
+                  </select>
+                </div><br>
+                <div id="pizzaTopping1">
+                  <label for="">Choose Pizza Topping1: </label>
+                  <select required class="form-control" id="Topping1">
+                    <option></option>
+                    <option value="Green">Green peper</option>
+                    <option value="Mushroom">Mushroom</option>
+                    <option value="Chicken">Cheese</option>
+                    <option value="Beef">Black Olive</option>
+                    <option value="Sausage">Red Onions</option>
+                  </select>
+                </div><br>
+                <div id="pizzaTopping2">
+                  <label for="">Choose Pizza Topping2: </label>
+                  <select required class="form-control" id="Topping2">
+                    <option></option>
+                    <option value="Peparoni">peparoni</option>
+                    <option value="Sausage">tomatoes</option>
+                    <option value="Sausage">Bacon</option>
+                  </select>
+                </div><br>
+
+
+                <div class="pizzaNumber">
+                  <label for="number">Number of pizza you want to order</label>
+                  <input required type="number" class="form-control" id="pizza-number" min="1"
+                    placeholder="u can order any number of pizza here">
+                </div><br>
+
+                <button type="submit" class="btn btn-info" id="send">Order</button>
+              </form>
+            </div>
+            <div class="col-md-6" id="price">
+              <h4>Price: <span id="totalPizzaCost"></span></h4>
+              <div id="order-details">
+                <p><a id="pizzaDetails">Pizza Details</a></p>
+                <p id="pizzaDetail">
+                </p>
+                <div class="deliver-pick">
+                  <button type="btn" class="btn btn-primary" id="deliver">Delivery</button>
+                  <ul id="deliveryPrice"></ul>
+
+                  <button type="btn" class="btn btn-primary" id="pickup">Pick up</button>
+                </div><br>
+              </div>
+
+              <button type="btn" class="btn btn-primary" id="checkout">Checkout</button>
+              <h3><span id="check"></span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="/static/js/script.js"></script> 
 </body>
 </html>
