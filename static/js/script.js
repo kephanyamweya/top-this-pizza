@@ -38,10 +38,68 @@ order.prototype.pizzaCost = function () {
       return this.pizzaPrice;
      }
      Order.prototype.finalCost = function () {
-      var TotalPrice = 0;
-      for (var i = 0; i < PizzatotalPrice.length; i ++) {
+      let TotalPrice = 0;
+      for (let i = 0; i < PizzatotalPrice.length; i ++) {
         TotalPrice += PizzatotalPrice[i];
       }
-      return TotalPrice;   
+      return TotalPrice;  
+       // Order.prototype.numberOfPizza = function () {
+//     for(let j = 1; j < pizzaNumbers.length; j++){
+//         let  pizzaNumber = finalCost() * pizzaNumber[j];
+//     }
+//         return pizzaNumber;
+//       }
+//User Interface Logic
+$(document).ready(function() { 
+    $(".header").height($(window).height());
+  
+    $("#orders").click(function(){
+      $("#order").show(1000)
+    });
+  
+   $("form#pizzaOrder").submit(function(event) {
+       event.preventDefault();
+     let pizzaSize = $("select#size").val();
+     let crust = $("select#crust").val();
+     let Topping1 = $("select#Topping1").val();
+     let Topping2 = $("select#Topping2").val();
+     let pizzaNumbers = $("input#pizza-number").val();
+     let pizzaDetails = (pizzaNumbers + ", " + pizzaSize + ", " + crust + ", " + Topping1 + ", " + Topping2);
+     let newPizzaOrder = new Order(pizzaSize, crust);
+     newPizzaOrder.pizzaCost();
+     PizzatotalPrice.push(newPizzaOrder.pizzaPrice);
+  
+  
+  
+     $("#pizzaDetails").show();
+     $("#totalPizzaCost").text(newPizzaOrder.finalCost());
+     $("#pizzaDetail").append("<p>" + pizzaDetails + "</p>");
+     $("#size, #crust, #Topping1, #Topping2, #pizza-number").val("");
+   });
+   $("#pizzaDetails").click(function() {
+     $("#pizzaDetail").toggle();
+     $("#deliver").toggle();
+     $("#pickup").toggle();
+     $("#checkout").hide();
+   });
+  $("button#deliver").click(function(event){
+     event.preventDefault();
+     alert("Delivery cost is" + " " + del);
+     let location = prompt("Enter your address:");
+     alert("We will deliver your order at" + " " + location);
+     $("#checkout").show();
+  })
+  $("button#pickup").click(function(event){
+     event.preventDefault();
+     alert("Thank you for shopping with us!!!!!");
+     $("#checkout").show();
+  })
+  $("button#checkout").click(function(event){
+     event.preventDefault();
+     let check = TotalPrice + del;
+     $("#check").text(check);
+     // console.log(check);
+  });
+  })
 }
 

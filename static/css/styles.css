@@ -34,7 +34,7 @@ body {
   justify-content: flex-start;
 }
 .header{
-    background-image: url(/static/images/anthony-duran-QbOvrpDU1KA-unsplash.jpg);
+    background-image: url();
     background-size: auto; 
     background-repeat: no-repeat;
     background-position: center;
@@ -49,7 +49,8 @@ body {
     background: rgba(0, 0, 0, 0.6);
   }
   #order{
-    display: none;
+    display: inline-flex;
+    color: red;
   }
   
   .intro{
@@ -62,56 +63,60 @@ body {
     align-items: center;
   }
   .jumbotron{
-    padding: 100px;
-    color: black;
+  padding: 100px;
+  color: black;
+}
+
+  .card{
+  /* background-image: url(); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  box-shadow: 5px 10px 5px;
+  }  
+  /* h4{
+    display:inline-flex;
+  } */
+  #pizzaDetails{
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration:underline;
+  color: red;
+  font-size:20px;
   }
-  
-    .card{
-    /* background-image: url("https://patch.com/img/cdn20/users/22729282/20180427/110819/styles/raw/public/processed_images/denizo71_italian_food_pizza_shutterstock_132517535-1524841650-5657.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-    box-shadow: 5px 10px 5px;
-    }  
-    /* h4{
-      display:none;
-    } */
-    #pizzaDetails{
-    display: none;
-    cursor: pointer;
-    text-decoration:underline;
-    color: aqua;
-    font-size:20px;
-    }
-    #pizzaDetail{
-    display: none;
-    }
-    #deliver{
-    display: none;
-    }
-    #pickup{
-    display: none;
-    }
-    #checkout{
-    display: none;
-    }
-    #Cost{
+  #pizzaDetail{
+  display: inline-flex;
+  color: red;
+  }
+  #deliver{
+  display: inline-flex;
+  color: red;
+  }
+  #pickup{
+  display: inline-flex;
+  color: red;
+  }
+  #checkout{
+  display: inline-flex;
+  color: red;
+  }
+  #Cost{
+  text-align: center;
+  margin-top: 5%;
+  }
+  .card-title{
     text-align: center;
-    margin-top: 5%;
-    }
-    .card-title{
-      text-align: center;
-    }
-    #foot{
-      text-align: center;
-      margin-top: 50px;
-   }
-   
-   .footer-msg p{
-      padding-top:10px;
-      font-size: 0.7em;
-   }
-   ul>li{
-      display: inline-block;
-      padding:20px;
-   }
+  }
+  #foot{
+    text-align: center;
+    margin-top: 50px;
+ }
+ 
+ .footer-msg p{
+    padding-top:10px;
+    font-size: 0.7em;
+ }
+ ul>li{
+    display: inline-block;
+    padding:20px;
+ }
