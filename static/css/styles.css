@@ -1,0 +1,35 @@
+body {
+   padding: 0;
+   margin: 0;
+   background:#6d9907;
+   overflow-x: hidden;
+}
+/*---navigation bar---*/
+.narbar {
+    background: black;
+    position: fixed;
+}
+.nav-link{
+    color: #fff;
+    cursor: pointer;
+    margin-right: 3em !important;
+}
+.nav-link:hover{
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+}
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+  background-color: red;
+  padding: 20px;
+  
+}
+.navbar-brand:hover {
+  background-color: darkgreen;
+  color:red;
+}
+.navbar-collapse {
+  justify-content: flex-start;
+}
