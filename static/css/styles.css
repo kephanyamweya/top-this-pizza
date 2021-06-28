@@ -19,7 +19,7 @@ body {
     margin-right: 3em !important;
 }
 .nav-link:hover{
-    background-image: url(/static/images/anthony-duran-QbOvrpDU1KA-unsplash.jpg);
+    background-image: url(static/images/anthony-duran-QbOvrpDU1KA-unsplash.jpg);
    
     width: fit-content;
     height: fit-content;
