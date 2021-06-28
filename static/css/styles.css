@@ -1,126 +1,121 @@
 body {
-   padding: 0;
-   margin: 0;
-   background:#6d9907;
-   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background: #6d9907;
+  overflow-x: hidden;
 }
 /*---navigation bar---*/
 .narbar {
-    
-    background-size: cover;
-    height: 100vh;
-    width: 100vh;
-    background: white;
-    position: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vh;
+  background: white;
+  position: fixed;
 }
-.nav-link{
-    color: #fff;
-    cursor: pointer;
-    margin-right: 3em !important;
+.nav-link {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 3em !important;
 }
-.nav-link:hover{
-    background-image: url(static/images/anthony-duran-QbOvrpDU1KA-unsplash.jpg);
-   
-    width: fit-content;
-    height: fit-content;
-    color: white;
-    padding: 10px;
+.nav-link:hover {
+  color: white;
+  padding: 10px;
 }
 .navbar-brand {
   color: #fff;
   cursor: pointer;
   background-color: red;
   padding: 20px;
-  
 }
 .navbar-brand:hover {
   background-color: darkgreen;
-  color:red;
+  color: red;
 }
 .navbar-collapse {
   justify-content: flex-start;
 }
-.header{
-    background-image: url();
-    background-size: auto; 
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-  }
-  .overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  #order{
-    display: inline-flex;
-    color: red;
-  }
-  
-  .intro{
-    text-align: center;
-    position: absolute; 
-    top:10%;
-    left:20%
-  }
-  button #send{
-    align-items: center;
-    color: red;
-  }
-  .jumbotron{
+.header {
+  background-image: url(/static/images/anthony-duran-QbOvrpDU1KA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  color: darkgreen;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#order {
+  display: inline-flex;
+  color: red;
+}
+
+.intro {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+button #send {
+  align-items: center;
+  color: red;
+}
+.jumbotron {
   padding: 100px;
   color: black;
 }
 
-  .card{
+.card {
   background-size: cover;
   opacity: 1;
   box-shadow: 5px 10px 5px;
-  }  
-   
-  #pizzaDetails{
+}
+
+#pizzaDetails {
   display: inline-flex;
   cursor: pointer;
-  text-decoration:underline;
+  text-decoration: underline;
   color: red;
-  font-size:20px;
-  }
-  #pizzaDetail{
+  font-size: 20px;
+}
+#pizzaDetail {
   display: inline-flex;
   color: red;
-  }
-  #deliver{
+}
+#deliver {
   display: inline-flex;
   color: red;
-  }
-  #pickup{
+}
+#pickup {
   display: inline-flex;
   color: red;
-  }
-  #checkout{
+}
+#checkout {
   display: inline-flex;
   color: red;
-  }
-  #Cost{
+}
+#Cost {
   text-align: center;
   margin-top: 5%;
-  }
-  .card-title{
-    text-align: center;
-  }
-  #foot{
-    text-align: center;
-    margin-top: 50px;
- }
- 
- .footer-msg p{
-    padding-top:10px;
-    font-size: 0.7em;
- }
- ul>li{
-    display: inline-block;
-    padding:20px;
- }
+}
+.card-title {
+  text-align: center;
+}
+#foot {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-msg p {
+  padding-top: 10px;
+  font-size: 0.7em;
+}
+ul > li {
+  display: inline-block;
+  padding: 20px;
+}
