@@ -43,7 +43,7 @@ body {
 }
 .overlay {
   position: absolute;
-  color: darkgreen;
+  color: red;
   min-height: 100%;
   min-width: 100%;
   left: 0;
